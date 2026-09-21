@@ -1,0 +1,58 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_54ej1fhvc5tq11q9mh3rp4dbt0
+  slug: we-vestr
+  slug_aliases: []
+  name: WE.VESTR
+  domains:
+    - value: wevestr.com
+      role: primary
+      valid_from: 2026-09-21T22:21:36Z
+  category: finance-accounting
+profile:
+  description: WE.VESTR provides equity-management tools for cap tables, shareholder reporting, fundraising, and employee equity plans.
+  links:
+    site: https://wevestr.com
+sources:
+  - source_id: src_ee4d29c41b039dc0982c1c06119060b228a8e5e82c05fc4083c1002d14a62025
+    url: https://wevestr.com/microsoft-for-startups
+  - source_id: src_543e31564b237a97d492b19051f47b43b427f421cb3f9b487f1acd980e3db0fe
+    url: https://learn.microsoft.com/en-us/startups/benefits/technical-benefits/third-party-benefits/we-vestr
+programs: []
+offers:
+  - offer_id: off_59qerz7are5cm257zra3wnn5ab
+    offer_slug: we-vestr-microsoft-for-startups
+    offer_slug_aliases: []
+    title: WE.VESTR Microsoft for Startups Benefit
+    summary: Microsoft for Startups Founders Hub members receive a first-year discount; the WE.VESTR Launch plan supports up to 30 stakeholders free.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-21T22:21:36Z
+    economics:
+      consideration:
+        kind: variable
+        description: This special offer includes a discount for the first year for members of Microsoft for Startups Founders Hub.
+      benefits:
+        - benefit_id: ben_free
+          description: Launch Up to 30 stakeholders Free
+          kind: free-service
+          service: Launch
+        - benefit_id: ben_discount
+          description: First-year discount for members of Microsoft for Startups Founders Hub
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a member of Microsoft for Startups Founders Hub.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_54ej1fhvc5tq11q9mh3rp4dbt0
+      access_operator_entity_id: ent_01kyh8fpe3n3yye39kmzvy410z
+    access:
+      availability: membership
+      method: form
+      url: https://learn.microsoft.com/en-us/startups/benefits/technical-benefits/third-party-benefits/we-vestr
+    source_ids:
+      - src_ee4d29c41b039dc0982c1c06119060b228a8e5e82c05fc4083c1002d14a62025
+      - src_543e31564b237a97d492b19051f47b43b427f421cb3f9b487f1acd980e3db0fe
