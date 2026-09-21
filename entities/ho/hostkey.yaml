@@ -1,0 +1,78 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m32xpgb67pvrfvctjnq848m6
+  slug: hostkey
+  slug_aliases: []
+  name: HOSTKEY
+  domains:
+    - value: hostkey.com
+      role: primary
+      valid_from: 2026-09-21T00:00:00.000Z
+  category: hosting-infra
+profile:
+  summary: HOSTKEY provides dedicated servers, GPU infrastructure, cloud hosting, and related data-center services.
+  description: HOSTKEY provides dedicated servers, GPU infrastructure, cloud hosting, and data-center services.
+  links:
+    site: https://hostkey.com
+sources:
+  - source_id: src_ed0f2db00ad7152dc759a21c2fe2ae0f0ac361b18af3c3d888a3c59f029794eb
+    url: https://hostkey.com/about-us/grants-for-scientific-projects-and-startups/
+programs:
+  - program_id: prg_01m32xpgbbrx8vhtrf91sz8nk1
+    program_slug: gpu-grant-program
+    program_slug_aliases: []
+    title: HOSTKEY GPU Grant Program
+    summary: HOSTKEY's GPU Grant Program provides selected research and prospective startup projects with GPU computing power.
+    source_ids:
+      - src_ed0f2db00ad7152dc759a21c2fe2ae0f0ac361b18af3c3d888a3c59f029794eb
+offers:
+  - offer_id: off_01m32xpgbbfekxes6bz9yv6cba
+    program_id: prg_01m32xpgbbrx8vhtrf91sz8nk1
+    offer_slug: gpu-grant-computing-power
+    offer_slug_aliases: []
+    title: GPU Grant computing power
+    summary: Selected research or prospective startup projects receive GPU computing power from HOSTKEY for the work described in their application.
+    description: >-
+      HOSTKEY invites eligible data-science research and prospective startup projects to apply for its GPU Grant Program.
+      A panel of experts determines one or more winners, and HOSTKEY provides computing power for the declared work.
+      The number of grants is limited. Winners must submit a follow-up report and provide annotations and results.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-21T00:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: GPU server computing power for the declared research or project work
+          kind: free-service
+          service: HOSTKEY GPU computing power
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Applicant is a full-time faculty member or research fellow at a recognized academic institution.
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Applicant is the principal investigator for the project.
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Project concerns data science, artificial intelligence, machine learning, big-data analysis, or graphics and video rendering workloads.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: Applicant submits no more than one application per round for one GPU grant.
+    roles:
+      terms_authority_entity_id: ent_01m32xpgb67pvrfvctjnq848m6
+      access_operator_entity_id: ent_01m32xpgb67pvrfvctjnq848m6
+    access:
+      availability: public
+      method: form
+      url: https://hostkey.com/about-us/grants-for-scientific-projects-and-startups/
+    source_ids:
+      - src_ed0f2db00ad7152dc759a21c2fe2ae0f0ac361b18af3c3d888a3c59f029794eb
