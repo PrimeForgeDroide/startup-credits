@@ -1,0 +1,65 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_d6fj05sg3w980apnb4ph3sqstc
+  slug: quotarider
+  slug_aliases: []
+  name: Quotarider
+  domains:
+    - value: quotarider.com
+      role: primary
+      valid_from: 2026-09-05T00:00:00Z
+  category: crm-sales
+profile:
+  summary: Quotarider provides AI revenue agents and CRM tools for sales teams.
+  description: Quotarider provides AI revenue agents and CRM tools for sales teams.
+  links:
+    site: https://quotarider.com/
+sources:
+  - source_id: src_549ed8210993baaa27a025d93fb343881c690c3bb0bc80360f8dcf74351dba02
+    url: https://quotarider.com/startup-program
+programs:
+  - program_id: prg_wf6fbrzy0t87ncs1dj8zc4r8rk
+    program_slug: quotarider-startup-program
+    program_slug_aliases: []
+    title: Quotarider Startup Program
+    summary: Quotarider's startup program gives approved early-stage companies an extra discount on paid plans.
+    source_ids:
+      - src_549ed8210993baaa27a025d93fb343881c690c3bb0bc80360f8dcf74351dba02
+offers:
+  - offer_id: off_bgwr3fgkp55e65nh17957cxmyc
+    program_id: prg_wf6fbrzy0t87ncs1dj8zc4r8rk
+    offer_slug: startup-extra-discount
+    offer_slug_aliases: []
+    title: Quotarider Startup Extra Discount
+    summary: Approved early-stage startups receive 25% off any Quotarider paid plan, in addition to founder pricing and yearly discounts.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-05T00:00:00Z
+    economics:
+      consideration:
+        kind: variable
+        description: Apply for the startup discount and pass Quotarider's personal review.
+      benefits:
+        - benefit_id: ben_discount
+          description: 25% off any paid Quotarider plan, stacking with founder pricing and yearly discounts.
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 2500
+    eligibility:
+      rule:
+        criterion_id: cri_startup_review
+        kind: manual
+        reason: vendor-discretion
+        statement: Early-stage companies from idea stage through Series A with small teams and real budget constraints may apply; Quotarider personally reviews each application.
+    roles:
+      terms_authority_entity_id: ent_d6fj05sg3w980apnb4ph3sqstc
+      access_operator_entity_id: ent_d6fj05sg3w980apnb4ph3sqstc
+    access:
+      availability: public
+      method: form
+      url: https://quotarider.com/startup-program
+      instructions: Submit the startup discount application with a work email, company name, stage, and a description of the startup and why the discount helps.
+    terms_url: https://quotarider.com/startup-program
+    source_ids:
+      - src_549ed8210993baaa27a025d93fb343881c690c3bb0bc80360f8dcf74351dba02
