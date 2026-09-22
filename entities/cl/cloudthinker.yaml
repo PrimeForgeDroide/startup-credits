@@ -1,0 +1,67 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_9dhw7cqpv8917mw9an1mvdrrza
+  slug: cloudthinker
+  slug_aliases: []
+  name: CloudThinker
+  domains:
+    - value: cloudthinker.io
+      role: primary
+      valid_from: 2026-09-09T00:00:00Z
+  category: hosting-infra
+profile:
+  summary: CloudThinker provides governed cloud operations, security, cost, and engineering services for startup infrastructure.
+  description: CloudThinker provides a governed platform with agents and services that help teams operate, secure, and optimize cloud infrastructure.
+  links:
+    site: https://www.cloudthinker.io/
+sources:
+  - source_id: src_d38ced82010ce24846d8113f7a7b13a8ff9fc732f0c7551e3002c770f92ad93e
+    url: https://www.cloudthinker.io/startups
+programs:
+  - program_id: prg_2qaeks5mxkg8gxg2y1zgnggx3m
+    program_slug: cloudthinker-startup-program
+    program_slug_aliases: []
+    title: CloudThinker Startup Program
+    summary: CloudThinker gives qualifying early-stage startups credits, priority onboarding, and expert consulting for their cloud foundation.
+    source_ids:
+      - src_d38ced82010ce24846d8113f7a7b13a8ff9fc732f0c7551e3002c770f92ad93e
+offers:
+  - offer_id: off_dw7kvyk598jj9yvzdvj82fxa9s
+    program_id: prg_2qaeks5mxkg8gxg2y1zgnggx3m
+    offer_slug: startup-credits-and-consulting
+    offer_slug_aliases: []
+    title: CloudThinker Startup Credits and Consulting
+    summary: Qualifying early-stage startups receive thousands of dollars in CloudThinker credits, priority onboarding, and expert cloud consulting.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-09T00:00:00Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_credits
+          description: Thousands of dollars in CloudThinker credits for CostOps, Code Review, Cyber, Managed, and other products.
+          kind: other
+        - benefit_id: ben_consulting
+          description: Expert consulting for architecture, a Well-Architected baseline, and agent setup.
+          kind: other
+        - benefit_id: ben_onboarding
+          description: Priority onboarding and rate limits while using startup credits.
+          kind: other
+    eligibility:
+      rule:
+        criterion_id: cri_startup_qualification
+        kind: manual
+        reason: vendor-discretion
+        statement: Early-stage startups building on AWS, Azure, or GCP, founded within five years, backed by an institutional investor or accelerator or bootstrapping toward it, and without prior CloudThinker startup credits may qualify.
+    roles:
+      terms_authority_entity_id: ent_9dhw7cqpv8917mw9an1mvdrrza
+      access_operator_entity_id: ent_9dhw7cqpv8917mw9an1mvdrrza
+    access:
+      availability: public
+      method: contact
+      url: https://www.cloudthinker.io/contact
+      instructions: Use the CloudThinker contact or Startup Program call to action to submit an application; approval is stated to occur within days.
+    terms_url: https://www.cloudthinker.io/startups
+    source_ids:
+      - src_d38ced82010ce24846d8113f7a7b13a8ff9fc732f0c7551e3002c770f92ad93e
