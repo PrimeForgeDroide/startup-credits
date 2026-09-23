@@ -17,12 +17,36 @@ profile:
 sources:
   - source_id: src_a0d94e42407f2b093a7cf06618c4220593652bca1ba51422fb44421225128502
     url: https://www.clay.com/clay-for-startups
-programs:
-  - program_id: prg_7jnyb21vav80xve4nkxnzn1qzn
-    program_slug: clay-wedge-startup-gtm-accelerator
-    program_slug_aliases: []
+programs: []
+offers:
+  - offer_id: off_7jnyb21vav80xve4nkxnzn1qzn
+    offer_slug: clay-wedge-startup-gtm-accelerator
+    offer_slug_aliases: []
     title: Clay Wedge Startup GTM Accelerator
     summary: Wedge is Clay's virtual GTM acceleration program for globally distributed, venture-backed startups at Series A or earlier, with credits and hands-on GTM Engineering support during a two-week live and asynchronous program.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-21T22:58:55Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_credits
+          description: Earn thousands of credits throughout the two week, live & async programs
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Wedge is for the fastest-growing, Series A and below venture-backed startups globally.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_tjv1tt1k0ffn2tkp2bent4he4t
+      access_operator_entity_id: ent_tjv1tt1k0ffn2tkp2bent4he4t
+    access:
+      availability: public
+      method: other
+      url: https://www.clay.com/clay-for-startups
     source_ids:
       - src_a0d94e42407f2b093a7cf06618c4220593652bca1ba51422fb44421225128502
-offers: []
