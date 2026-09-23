@@ -30,7 +30,10 @@ offers:
     economics:
       consideration:
         kind: none
-      benefits: []
+      benefits:
+        - benefit_id: ben_support
+          description: GTM acceleration support for eligible startups
+          kind: other
     eligibility:
       rule:
         kind: manual
