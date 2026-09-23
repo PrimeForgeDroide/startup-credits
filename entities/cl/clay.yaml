@@ -27,19 +27,6 @@ offers:
     lifecycle:
       status: active
       effective_from: 2026-09-21T22:58:55Z
-    economics:
-      consideration:
-        kind: none
-      benefits:
-        - benefit_id: ben_credits
-          description: Earn thousands of Clay credits throughout the two-week live and asynchronous program
-          kind: other
-        - benefit_id: ben_support
-          description: Hands-on support from Clay GTM Engineering experts and coaches
-          kind: other
-        - benefit_id: ben_network
-          description: Connections with other leading early-stage founders and growth leaders
-          kind: other
     eligibility:
       rule:
         kind: manual
