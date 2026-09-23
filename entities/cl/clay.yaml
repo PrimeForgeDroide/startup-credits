@@ -29,10 +29,11 @@ offers:
       effective_from: 2026-09-21T22:58:55Z
     economics:
       consideration:
-        kind: none
+        kind: unknown
+        description: The source record did not establish separate consideration.
       benefits:
-        - benefit_id: ben_support
-          description: GTM acceleration support for eligible startups
+        - benefit_id: ben_credits
+          description: Earn thousands of credits throughout the two week, live & async programs
           kind: other
     eligibility:
       rule:
